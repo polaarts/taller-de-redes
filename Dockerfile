@@ -21,12 +21,6 @@ WORKDIR /app/
 
 RUN git clone https://github.com/lavv17/lftp.git
 
-# WORKDIR /opt/lftp
-
-# RUN git clone git://git.savannah.gnu.org/gnulib /opt/gnulib
-
-# ENV PATH="/opt/gnulib:${PATH}"
-
 WORKDIR /app/lftp
 
 RUN ./autogen.sh
